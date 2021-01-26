@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <h1>Customer Experience Survey</h1>
+    <form>
+        <label for="storeNumber">Store Number</label>
+        <select id="storeNumber">
+            <option hidden>Select a store</option>
+            <option>3109</option>
+            <option>2421</option>
+            <option>5357</option>
+        </select>
+        <fieldset>
+            <legend>When you visited</legend>
+            <label>
+                Date Visited:
+                <input type="date" min="2021-01-01" max="2021-12-21">
+                <!-- The image that was uploded to slack said 2020, but the instructions said this year so I set the range to this year -->
+                Time:
+                <input type="time">
+            </label>
+        </fieldset>
+
+
+        First Name:
+        <input type="text" placeholder="John">
+        Last Name:
+        <input type="text" placeholder="Doe">
+        <br>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" placeholder="your email">
+
+        <br>
+        <label for="genderOne">Male</label>
+        <input type="radio" id="genderOne" name="radiolink">
+        <label for="genderTwo">Female</label>
+        <input type="radio" id="genderTwo" name="radiolink" checked>
+        <label for="genderThree">Other</label>
+        <input type="radio" id="genderThree" name="radiolink">
+        <br>
+        <label for="customerExperience">Tell us about yout experience:</label>
+        <br>
+        <textarea id="customerExperience" cols="20" rows="2"></textarea>
+        <br>
+        <label>
+            Times visited in the last month:
+            <input type="number" min="1" max="30">
+        <!-- Months can have 31 days, just saying -->
+        </label>
+        <br>
+        <label for="userCheckbox">Please check the box if youwould be willing to be contacted about your
+            experience</label>
+        <input type="checkbox" id="userCheckbox">
+        <br>
+            <label for="userPassword">Please enter a password that is 5 to 10 character in length.</label>
+            <input type="password" id="userPassword" minlength="5" maxlength="10" required>
+            <!-- To whoever grades this, I spent a good hour on trying to get the error message to show up because I didn't put the required attribute in my notes, but is there any way to edit that? -->
+        <br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+
+
+
+</body>
+
+</html>
